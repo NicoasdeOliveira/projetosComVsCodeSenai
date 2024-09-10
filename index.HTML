@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👀Pagina Inicio</title>
+</head>
+
+<body style="background-color: rgb(143, 143, 240); text-align: center; color: rgb(255, 255, 255);">
+
+    <h1>Ok👍</h1>
+    <p>👍👀😊🤣</p>
+    <label for="Nome">Nome</label>
+    <input id="Nome" type="text" placeholder="Ex: Usuário"><br>
+    <button onclick="boasVindas()">Clique aqui</button><br>
+    <button onclick="parOuImpar()">Par ou Impar</button>
+    <script>
+        function boasVindas() {
+            let Nome = document.getElementById("Nome").value;
+            let ano = prompt("Bem vindo, " + Nome + "Digite sua data de nascimento!");
+            if (2024 - ano > 17) {
+                alert("Você tem " + (2024 - ano) + "Anos")
+            }
+            else {
+                alert("Portanto vc é menor de idade tens " + (2024 - ano) + "Anos");
+            }
+        }
+
+        function parOuImpar() {
+            let numero = prompt("Digite um número");
+            if (numero % 2 == 1) {
+                alert("É impar")
+            }
+            else {
+                alert("É par")
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
